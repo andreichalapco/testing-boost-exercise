@@ -1,3 +1,5 @@
+![SSE Boost Testing](https://github.com/andreichalapco/testing-boost-exercise/actions/workflows/testing.yml/badge.svg)
+
 # SIDEMADE - Simple Dense Matrix Decomposition
 
 A simple demo code to read dense matrices from files and solve linear systems with them.
@@ -6,7 +8,7 @@ A simple demo code to read dense matrices from files and solve linear systems wi
 
 - `cmake`: Third-party CMake modules
 - `CMakeLists.txt`: CMake configuration file
-- `config.yml`: SIDEMADE configuration file 
+- `config.yml`: SIDEMADE configuration file
 - `data`: Various dense matrices
   - `m3.csv`: A 3x3 matrix with randomly generated entries
   - `m10.csv`: An ill-conditioned 10x10 [Hilbert matrix](https://math.nist.gov/MatrixMarket/deli/Hilbert/)
@@ -26,10 +28,10 @@ A simple demo code to read dense matrices from files and solve linear systems wi
 You can build the code using CMake:
 
 ```bash
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make -j
+mkdir build
+cd build
+cmake ..
+make -j
 ```
 
 ### Dependencies
@@ -49,7 +51,7 @@ You need to call the code with a configuration file, e.g. `config.yml`.
 If you call the program from the build folder:
 
 ```bash
-$ ./sidemade ../data/config.yml
+./sidemade ../data/config.yml
 ```
 
 ### Configuration
@@ -69,5 +71,5 @@ MatrixSize: 250
 You can format the code base using [clang-format](https://clang.llvm.org/docs/ClangFormat.html):
 
 ```bash
-$ clang-format -i src/*
+clang-format -i src/*
 ```
