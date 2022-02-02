@@ -30,6 +30,7 @@ BOOST_AUTO_TEST_CASE(IO1)
 
   for (int i = 0; i < matrixSize; i++) {
     for (int j = 0; j < matrixSize; j++) {
+      // checking matrix values
       BOOST_TEST(testMatrix(i, j) == expectedX(i, j));
     }
   }
